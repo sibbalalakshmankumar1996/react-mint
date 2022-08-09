@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+import Headersection from './components/Headersection'
+import Investments from './components/Investments'
+import BattleGround from './components/BattleGround'
+import Financeapp from './components/Financeapp'
+import Insurance from './components/Insurance'
+import Genierecommends from './components/Genierecommends'
+import Footersection from './components/Footersection'
+import Indices from './components/Indices'
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    {/* <Indices/> */}
+    <Headersection/>
+    <Investments />
+    <BattleGround/>
+    <Genierecommends />
+    <Insurance />
+    <Financeapp/>
+    <Footersection/> 
+    </>
+  )
 }
-
-export default App;
