@@ -1,0 +1,123 @@
+@import "../../../../assets/sass/variables.scss";
+@import "../../../../assets/sass/mixins";
+
+.box{
+    // max-width:14rem;
+    flex-grow:1;
+    // max-height:10rem;
+    opacity:0.7;
+    border-radius:1rem;
+    padding-top:2rem;
+    padding-left:1rem;
+    padding-bottom:1.7rem;
+    
+}
+.box + .box{
+    margin-left:1rem;
+}
+.green-box{
+    background-color:$green_box_background;
+    border:0.1rem solid #CEF0E3;
+}
+.red-box{
+    background-color:$red_box_background;
+    border:0.1rem solid #F0CECE;
+}
+
+.box-name{
+    color:$grey_color;
+    font-size:1.1rem;
+    font-family:$font-montserrat;
+    font-weight:400;
+    display:inline-block;
+    margin-right:0.3rem;
+}
+.indices-number{
+    font-family: $font-montserrat;
+    font-weight:bold;
+    font-size:1.7rem;
+    color:$eerie_black;
+}
+.indices-percentage{
+    font-family:$font-montserrat;
+    font-weight:600;
+    font-size:1.1rem;
+}
+.profit{
+    color:$green_color;
+}
+.loss{
+    color:$red_color;
+}
+
+@include breakpoint(mobile){
+    .box + .box{
+        margin-left:0rem;
+    }
+    .box{
+        min-width:9rem;
+        margin-right:1rem;
+        margin-bottom:1rem;
+        padding-top:1rem;
+        padding-left:0.5rem;
+        padding-bottom:1rem;
+        flex-grow:0;
+    }
+    .box-name{
+        font-size:0.9rem;
+    }
+    .indices-number{
+        font-size:1rem;
+    }
+    .indices-percentage{
+        font-size:0.7rem;
+    }
+ }
+
+ @include breakpoint(tablet){
+    .box + .box{
+        margin-left:0rem;
+    }
+    .box{
+        min-width:9rem;
+        margin-right:1rem;
+        margin-bottom:1rem;
+        padding-top:1.6rem;
+        padding-left:0.8rem;
+        padding-bottom:1.5rem;
+        flex-grow:0;
+    }
+    .box-name{
+        font-size:1rem;
+    }
+    .indices-number{
+        font-size:1.2rem;
+    }
+    .indices-percentage{
+        font-size:1rem;
+    }
+ }
+
+ @include breakpoint(laptop){
+    .box + .box{
+        margin-left:0rem;
+    }
+    .box{
+        min-width:9rem;
+        margin-right:1rem;
+        margin-bottom:1rem;
+        padding-top:1.8rem;
+        padding-left:0.9rem;
+        padding-bottom:1.6rem;
+        flex-grow:1;
+    }
+    .box-name{
+        font-size:1rem;
+    }
+    .indices-number{
+        font-size:1.4rem;
+    }
+    .indices-percentage{
+        font-size:1.1rem;
+    }
+ }

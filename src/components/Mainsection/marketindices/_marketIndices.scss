@@ -1,0 +1,35 @@
+@import "../../../assets/sass/variables.scss";
+@import "../../../assets/sass/mixins";
+
+.container{
+    @include left-right-space;
+}
+.market-text{
+    @include header-navigation;
+    margin-top:2.9rem;
+}
+.boxes-list{
+    list-style-type:none;
+    max-width:144rem;
+    padding-left:0rem;
+    display:flex;
+}
+
+@include breakpoint(mobile){
+    .boxes-list{
+      display:flex;
+      flex-wrap:wrap;
+    }
+ }
+ @include breakpoint(tablet){
+    .boxes-list{
+      display:flex;
+      flex-wrap:wrap;
+    }
+ }
+ @include breakpoint(laptop){
+    .boxes-list{
+      display:flex;
+      flex-wrap:wrap;
+    }
+ }

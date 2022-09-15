@@ -1,0 +1,96 @@
+@import "../../assets/sass/variables.scss";
+@import "../../assets/sass/mixins";
+.wrapper{
+    @include left-right-space;
+}
+.footer-container{
+    background-color:$footer_background;
+}
+.label-text{
+    @include title-text;
+    display:inline-block;
+    font-size:1.1rem;
+    margin-bottom:1.2rem;
+}
+.input-container{
+    position:relative;
+}
+.input-field{
+    height:4.4rem;
+    color:$grey_color;
+    font-size:1.2rem;
+    font-family:$font-montserrat;
+    font-weight:500;
+}
+.rightarrow{
+    position:absolute;
+    right:0;
+    padding-right:1.2rem;
+    font-size:2rem;
+    cursor:pointer;
+}
+.icons{
+    width:3.8rem;
+    height:3.8rem;
+    border:0.1rem solid #BCBCBC;
+    border-radius:10rem;
+    font-size:2.4rem;
+    text-decoration:none;
+    color:$grey_color;
+    padding:1.2rem;
+}
+.icons + .icons{
+    margin-left:1.2rem;
+}
+.footer-store-button{
+    @include store-button;
+    min-height:3.6rem;
+    min-width:11.2rem;
+    font-size:1.1rem;
+    border:0.1rem solid #BCBCBC;
+    padding:0.9rem 1.8rem;
+}
+.content-space{
+    margin-left:0.9rem;
+}
+.stocks-text{
+    @include title-text;
+    font-size:1.4rem; 
+    padding-right:0.6rem;
+}
+.alphabets{
+    @include letters-text;
+    color:$grey_color;
+    display:inline-block;
+}
+.bottom-line{
+    border-bottom:0.1rem dashed $grey_color;
+    margin-bottom:2.8rem;
+}
+.footer-list-title{
+    @include title-text;
+    font-size:1.4rem; 
+}
+.footer-links{
+    list-style-type: none;
+}
+
+.footer-list{
+    @include letters-text;
+    color:$grey_color;
+    text-decoration:none;
+    line-height:2.8rem;
+}
+.copyright-sec{
+    background-color:$white_color;
+    padding-top:1.8rem;
+    padding-bottom:1.8rem;
+}
+.arrow{
+    color:$black_color;
+    font-size:1.2rem;
+}
+.copyright-info{
+    @include letters-text;
+    color:$eerie_black;
+}

@@ -1,0 +1,59 @@
+@import '../../../assets/sass/variables.scss';
+@import "../../../assets/sass/mixins";
+
+.mintgenie-container {
+    @include mintgenie-main-section;
+}
+
+.para-details {
+    @include para-text;
+    color: $eerie_black;
+    //width:43.3rem;
+}
+
+.portfolio-details {
+    width: 45.3rem;
+}
+
+
+
+
+@include breakpoint(mobile) {
+    // .container {
+    //     max-width:100%;
+    //     padding-left: 1rem;
+    //     padding-right: 1rem;
+    // }
+    // .mintgenie-container{
+    //     padding-left:0rem;
+    //     padding-right:0rem;
+    // }
+
+    .para-details {
+        font-size: 1rem;
+    }
+    
+    .portfolio-details{
+        width:100%;
+        margin-bottom:1rem;
+    }
+}
+@include breakpoint(tablet){
+    // .container{
+    //     padding-left:2rem;
+    //     padding-right:2rem;
+    //     margin:0rem;
+    // }
+    .para-details {
+        font-size: 1.2rem;
+    }
+    
+    // .mintgenie-container{
+    //     padding-left:0rem;
+    //     padding-right:0rem;
+    // }
+    .portfolio-details {
+        width: 23rem;
+    }
+
+}

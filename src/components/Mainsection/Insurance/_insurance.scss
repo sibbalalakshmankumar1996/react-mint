@@ -1,0 +1,34 @@
+@import "../../../assets/sass/variables.scss";
+@import "../../../assets/sass/mixins";
+
+
+.insurance-container{
+    background-color:$white_color;
+}
+.mintgenie-container{
+    @include mintgenie-main-section;
+    
+}
+.sub-text{
+    @include para-text;
+}
+
+@include breakpoint(mobile){
+    .sub-text{
+        font-size:1rem;
+    }
+    
+}
+
+@include breakpoint(tablet){
+    .sub-text{
+        font-size:1.2rem;
+        
+    }
+}
+
+@include breakpoint(laptop){
+    .sub-text{
+        font-size:1.4rem;
+    }
+}

@@ -1,0 +1,78 @@
+
+@mixin left-right-space{
+    padding-left: 9rem;
+    padding-right: 9rem;
+    max-width: 144rem;
+}
+
+@mixin mintgenie-main-section{
+    padding-left:15.2rem;
+    padding-right:7rem;
+}
+
+@mixin header-navigation{
+    font-family:$font-montserrat;
+    font-size:1.3rem;
+    color:$eerie_black;
+    font-weight:600;
+}
+
+@mixin heading-text{
+    font-family:$font-montserrat;
+    font-size:4.3rem;
+    color:$eerie_black;
+    font-weight:700;
+}
+@mixin para-text{
+    font-family:$font-montserrat;
+    font-size:1.6rem;
+    font-weight:400;
+}
+
+@mixin get-button{
+    min-height:5rem;
+    min-width:19.7rem;
+    background-color:$button_background;
+    border:none;
+    border-radius:0.5rem;
+    cursor: pointer;
+    padding-top:1.6rem;
+    padding-bottom:1.5rem;
+    color:$black_color;
+    font-size:1.6rem;
+    font-family:$font-montserrat;
+    font-weight:500;
+}
+@mixin store-button{
+    font-family:$font-montserrat;
+    font-weight:600;
+    background-color:$white_color;
+    border-radius:5rem;
+}
+
+@mixin title-text{
+    font-family:$font-montserrat;
+    font-weight:700;
+    color:$eerie_black;
+}
+
+@mixin letters-text{
+    font-family:$font-montserrat;
+    font-weight:400;
+    font-size:1.4rem;
+}
+
+//responsiveness 
+
+@mixin breakpoint($point){
+    @if $point == mobile{
+        @media screen and (min-width:320px) and (max-width:480px) {@content; }
+    }
+    @if $point == tablet{
+        @media screen and (min-width:768px) and (max-width:1023px) {@content; }
+    }
+    @if $point == laptop{
+        @media screen and (min-width:1024px) and (max-width:1439px) {@content; }
+    }
+    
+}

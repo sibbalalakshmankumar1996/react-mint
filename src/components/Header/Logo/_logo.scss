@@ -1,0 +1,17 @@
+@import "../../../assets/sass/variables";
+@import "../../../assets/sass/mixins";
+
+
+.mintgenie-logo{
+    display:inline-block;
+    margin-right:3rem;
+    width:13.4rem;
+    height:3.1rem;
+}
+
+@include breakpoint(mobile){
+    .mintgenie-logo{
+       margin-right:1rem;
+    }
+ 
+ }

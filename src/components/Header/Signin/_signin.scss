@@ -1,0 +1,80 @@
+@import "../../../assets/sass/variables";
+
+
+.bellafter-icon{
+    display:inline-block;
+    background-color:$black_color;
+    color:$eerie_black;
+    border-radius:5rem;
+    padding:0.5rem 0.5rem 0rem;
+    font-size:1.9rem;
+    height:2.7rem;
+    width:2.7rem;
+    margin-right:0.7rem;
+}
+.header-top-text{
+    color:$eerie_black;
+    font-family:$font-montserrat;
+    font-weight:500;
+    font-size:1.6rem;
+}
+
+.signin-button{
+    background-color:$white_color;
+    border:none;
+    font-size:1.6rem;
+}
+
+.signin-button:hover{
+    background-color:$button_hover;
+    padding:0.5rem 1rem;
+    border-radius:10rem;
+}
+
+// modal scss
+
+.header-title{
+    width:100%;
+    text-align:center;
+    color:$eerie_black;
+    font-size:4rem;
+    font-family:$font-montserrat;
+    font-weight:600;
+}
+
+.required:after{
+    content:"*";
+    color:red;
+}
+.required{
+    color:$eerie_black;
+    font-size:1.6rem;
+    font-family:$font-montserrat;
+    font-weight:600;
+}
+.form-control{
+    height:5rem;
+}
+input[placeholder]{
+    font-size:1.6rem;
+    font-family: $font-montserrat;
+    font-weight:500;
+}
+
+#login-button, #register-button{
+    font-size:2rem;
+    border-radius:10rem;
+}
+.account{
+    width:100%;
+    font-size:1.6rem;
+    font-family: $font-montserrat;
+    font-weight:600;
+    text-align:center;
+}
+.error{
+    color:red;
+    font-size:1rem;
+    font-family: $font-montserrat;
+    font-weight:500;
+}

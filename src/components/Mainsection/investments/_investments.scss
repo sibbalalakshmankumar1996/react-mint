@@ -1,0 +1,44 @@
+@import "../../../assets/sass/variables.scss";
+@import "../../../assets/sass/mixins";
+
+.investmentcontainer{
+    background-color:$blue_color;
+}
+.mintgenie-container{
+    @include mintgenie-main-section;
+}
+
+// .investments-img{
+//     width:45.7rem;
+//     height:35.3rem;
+// }
+.investment-description{
+    @include para-text;
+    text-align:right;
+    color:$white_color;
+}
+.investment-details{
+    width:47rem;
+    text-align:right;
+}
+
+@include breakpoint(mobile){
+    .investment-description{
+        font-size:1rem;
+        text-align:left;
+    }
+    .investment-details{
+        width:100%;
+        text-align:left;
+    }
+}
+@include breakpoint(tablet){
+    .investment-description{
+        font-size:1.2rem;
+    }
+}
+@include breakpoint(laptop){
+    .investment-description{
+        font-size:1.4rem;
+    }
+}

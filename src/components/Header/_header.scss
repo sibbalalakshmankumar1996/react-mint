@@ -1,0 +1,18 @@
+@import "../../assets/sass/variables";
+@import "../../assets/sass/mixins";
+
+
+.container{
+   @include left-right-space;
+   
+}
+
+@include breakpoint(mobile){
+   .container{
+      max-width:100%;
+      padding-left:1rem;
+      padding-right:1rem;
+   }
+
+}
+

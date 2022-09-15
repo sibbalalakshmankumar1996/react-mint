@@ -1,0 +1,45 @@
+@import "../../../assets/sass/variables.scss";
+@import "../../../assets/sass/mixins";
+
+
+.mintgenie-container{
+    @include mintgenie-main-section;
+}
+
+.genie-container{
+    background-color:$genie_background;
+}
+
+.genie-details{
+    text-align:right;
+    width:39.2rem;
+}
+.genie-description{
+    @include para-text;
+    text-align:right;
+}
+
+@include breakpoint(mobile){
+    .genie-description{
+        font-size:1rem;
+        text-align:left;
+    }
+    .genie-details{
+        width:100%;
+        text-align:left;
+        margin-top:1rem;
+    }
+}
+
+@include breakpoint(tablet){
+    .genie-description{
+        font-size:1.2rem;
+        
+    }
+}
+
+@include breakpoint(laptop){
+    .genie-description{
+        font-size:1.4rem;
+    }
+}

@@ -1,18 +1,21 @@
 import React from 'react'
-import './style.css'
-export default function Footersection() {
+import Logo from '../Header/Logo/Logo'
+import './_footer.scss';
+
+export default function Footer() {
     return (
         <>
-            <section className="footer-container pt-3 pb-3">
-                <div className="container">
+            <footer>
+                <section className="footer-container">
+                <div className="container pt-5 pb-5">
                     <div className="row">
                         <div className="col-12 col-xl-4">
-                            <img src="./images/mintgenie_logo.png" alt="Mintgenie" className="mintGenie-image" />
+                            <Logo />
                             <div className="mt-4">
                                 <label className="label-text">SUBSCRIBE TO OUR NEWSLETTER</label>
                                 <div className="d-flex align-items-center input-container">
-                                    <input type="email" className="user-input form-control" placeholder="Your Email Address" />
-                                    <i className="fa-solid fa-arrow-right rightarrow"></i>
+                                    <input type="email" className="input-field form-control" placeholder="Your Email Address" />
+                                    <i class="fa-solid fa-arrow-right rightarrow"></i>
                                 </div>
 
                             </div>
@@ -39,7 +42,7 @@ export default function Footersection() {
                                 </div>
                             </div>
 
-                        </div>-
+                        </div>
                         <div class="col-12 col-xl-7">
                             <div className="col-12">
                                 <span className="stocks-text">STOCKS</span>
@@ -52,7 +55,7 @@ export default function Footersection() {
                             <div className="d-md-flex">
                                 <div className="col-5 col-md-3 col-xl-3">
                                     <h4 className="footer-list-title">MINTGENIE</h4>
-                                    <ul className="footer-links mt-3">
+                                    <ul className="footer-links p-0 mt-3">
                                         <li><a href="#0" className="footer-list">About Us</a></li>
                                         <li><a href="#0" className="footer-list">Contact Us</a></li>
                                         <li><a href="#0" className="footer-list">Support/Feedback</a></li>
@@ -67,7 +70,7 @@ export default function Footersection() {
                                 </div>
                                 <div className="col-5 col-md-3 col-xl-3">
                                     <h4 className="footer-list-title">NEWS</h4>
-                                    <ul className="footer-links mt-3">
+                                    <ul className="footer-links p-0 mt-3">
                                         <li><a href="#0" className="footer-list">Latest</a></li>
                                         <li><a href="#0" className="footer-list">Markets</a></li>
                                         <li><a href="#0" className="footer-list">Mutual Funds</a></li>
@@ -83,7 +86,7 @@ export default function Footersection() {
                                 </div>
                                 <div className="col-md-3 col-xl-3">
                                     <h4 className="footer-list-title">TOOLS</h4>
-                                    <ul className="footer-links mt-3">
+                                    <ul className="footer-links p-0 mt-3">
                                         <li><a href="#0" className="footer-list">Tax Calculator</a></li>
                                         <li><a href="#0" className="footer-list">Returns Calculator</a></li>
                                         <li><a href="#0" className="footer-list">Sip Calculator</a></li>
@@ -94,7 +97,7 @@ export default function Footersection() {
                                 </div>
                                 <div className="col-md-3 col-xl-3">
                                     <h4 className="footer-list-title">PARTNER SITES</h4>
-                                    <ul className="footer-links mt-3">
+                                    <ul className="footer-links p-0 mt-3">
                                         <li><a href="#0" className="footer-list">Mint</a></li>
                                         <li><a href="#0" className="footer-list">Livehindustan</a></li>
                                         <li><a href="#0" className="footer-list">Shine</a></li>
@@ -114,13 +117,13 @@ export default function Footersection() {
 
                     </div>
                 </div>
-            </section>
-            <section className="copyright-sec">
-                <div className="container">
-                    <p className="paragraph black-color-para">Copyright &copy; HT Digital streams Ltd. All Rights Reserved.</p>
-                </div>
-            </section>
-
+                </section>
+                <section className="copyright-sec">
+                    <div className="container">
+                        <p className="copyright-info">Copyright &copy; HT Digital streams Ltd. All Rights Reserved.</p>
+                    </div>
+                </section>
+            </footer>
         </>
     )
 }

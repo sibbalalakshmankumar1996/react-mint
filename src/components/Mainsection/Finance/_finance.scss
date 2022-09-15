@@ -1,0 +1,66 @@
+@import "../../../assets/sass/variables.scss";
+@import "../../../assets/sass/mixins";
+
+.mintgenie-container{
+    @include mintgenie-main-section;
+}
+.finance-container{
+    background-color:$blue_color
+}
+.financeapp-img{
+    width:26rem;
+}
+.financeapp-details{
+    text-align:right;
+    width:54.4rem;
+}
+.finance-description{
+    @include para-text;
+    color:$white_color;
+    text-align:right;
+}
+.store-button{
+    @include store-button;
+    height:5.4rem;
+    width:16.8rem;
+    font-size:1.6rem;
+    border:none;
+    padding:0.9rem 1.8rem;
+}
+button + button {
+    margin-left:1rem;
+} 
+.content-space{
+    display:inline-block;
+    margin-left:0.9rem;
+}
+//media queries
+
+@include breakpoint(mobile){
+    .financeapp-details{
+        max-width:100%;
+        text-align:left;
+    }
+    .finance-description{
+        font-size:1rem;
+        text-align:left;
+    }
+    .store-button{
+        height:4rem;
+        width:13rem;
+        font-size:1rem;
+        padding:0.5rem 1.1rem;
+    }
+}
+@include breakpoint(tablet){
+    .finance-description{
+        font-size:1.2rem;
+        text-align:right;
+    }
+}
+@include breakpoint(laptop){
+    .finance-description{
+        font-size:1.4rem;
+        text-align:right;
+    }
+}

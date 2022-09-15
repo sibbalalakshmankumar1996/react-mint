@@ -1,0 +1,39 @@
+@import "../../../assets/sass/variables.scss";
+@import "../../../assets/sass/mixins";
+
+
+.click-button{
+    @include get-button;
+}
+.font{
+    font-family:$font-rubik;
+}
+
+@include breakpoint(mobile){
+    .click-button{
+        min-height:3rem;
+        min-width:12rem;
+        padding-top:1rem;
+        padding-bottom:0.9rem;
+        font-size:1rem;
+    }
+}
+
+@include breakpoint(tablet){
+    .click-button{
+        min-height:3.5rem;
+        min-width:14rem;
+        padding-top:1.2rem;
+        padding-bottom:1.1rem;
+        font-size:1.2rem;
+    }
+}
+@include breakpoint(laptop){
+    .click-button{
+        min-height:4rem;
+        min-width:16rem;
+        padding-top:1.3rem;
+        padding-bottom:1.2rem;
+        font-size:1.4rem;
+    }
+}

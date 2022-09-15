@@ -1,0 +1,15 @@
+@import "../../../assets/sass/variables";
+@import "../../../assets/sass/mixins";
+
+.menu-image{
+    height:1.8rem;
+    width:2.3rem;
+    display:inline-block;
+    margin-right:1.5rem;
+}
+@include breakpoint(mobile){
+    .menu-image{
+       margin-right:1rem;
+    }
+ 
+ }

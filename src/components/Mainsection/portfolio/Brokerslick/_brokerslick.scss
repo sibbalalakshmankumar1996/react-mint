@@ -1,0 +1,53 @@
+@import "../../../../assets/sass/variables.scss";
+@import "../../../../assets/sass/mixins";
+
+.brokers-text{
+    color:$eerie_black;
+    font-family: $font-montserrat;
+    font-weight:medium;
+    font-size:1.5rem;
+}
+.slick-div{
+    background-color:$slick_background;
+    padding:3rem;
+}
+.brokers-list{
+    height:10rem;
+    width:10rem;
+    border-radius:1rem;
+    border:1px solid $slick_background;
+    background-color:$white_color;
+    padding:2rem 0.4rem 1.2rem 0.4rem;
+}
+.brokers-list + .brokers-list{
+    margin-left:1rem;
+} 
+
+@include breakpoint(mobile){
+    .brokers-text{
+        font-size:1rem;
+    }
+    .slick-div{
+        padding:2rem;
+    }
+    .brokers-list{
+        height:7rem;
+        width:7rem;
+        padding:1rem 0.2rem 0.6rem;
+    }
+}
+
+@include breakpoint(tablet){
+    .brokers-text{
+        font-size:1.2rem;
+    }
+    .slick-div{
+        padding:2rem;
+    }
+    .brokers-list{
+        height:8rem;
+        width:8rem;
+        padding:1rem 0.2rem 0.6rem;
+    }
+
+}

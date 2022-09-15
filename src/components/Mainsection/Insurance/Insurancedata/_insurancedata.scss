@@ -1,0 +1,30 @@
+@import "../../../../assets/sass/variables.scss";
+@import "../../../../assets/sass/mixins";
+
+
+.checkcirlce-image{
+    display:inline-block;
+    margin-right:0.7rem;
+}
+
+.para{
+    @include para-text;
+    white-space: nowrap;
+}
+
+@include breakpoint(mobile){
+    .para{
+        font-size:1rem;
+    }
+}
+
+@include breakpoint(tablet){
+    .para{
+        font-size:1.2rem;
+    }
+}
+@include breakpoint(laptop){
+    .para{
+        font-size:1.4rem;
+    }
+}

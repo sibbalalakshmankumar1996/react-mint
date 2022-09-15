@@ -1,25 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-import Headersection from './components/Headersection'
-import Investments from './components/Investments'
-import BattleGround from './components/BattleGround'
-import Financeapp from './components/Financeapp'
-import Insurance from './components/Insurance'
-import Genierecommends from './components/Genierecommends'
-import Footersection from './components/Footersection'
-import Indices from './components/Indices'
+
+
+import Header from './components/Header/Header'
+import Mainsection from './components/Mainsection/Mainsection'
+import Footer from './components/Footer/Footer'
 
 export default function App() {
   return (
     <>
-    {/* <Indices/> */}
-    <Headersection/>
-    <Investments />
-    <BattleGround/>
-    <Genierecommends />
-    <Insurance />
-    <Financeapp/>
-    <Footersection/> 
+      <Header />
+      <Mainsection />
+      <Footer />
     </>
   )
 }

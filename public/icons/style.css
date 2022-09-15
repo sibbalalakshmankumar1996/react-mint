@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?km9g93');
-  src:  url('fonts/icomoon.eot?km9g93#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?km9g93') format('truetype'),
-    url('fonts/icomoon.woff?km9g93') format('woff'),
-    url('fonts/icomoon.svg?km9g93#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?8n9rd4');
+  src:  url('fonts/icomoon.eot?8n9rd4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8n9rd4') format('truetype'),
+    url('fonts/icomoon.woff?8n9rd4') format('woff'),
+    url('fonts/icomoon.svg?8n9rd4#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,9 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-right_arrow:before {
-  content: "\e900";
-}
 .icon-facebook:before {
   content: "\e901";
   color: #929294;
@@ -53,13 +50,13 @@
   content: "\e907";
 }
 .icon-after_bell:before {
-  content: "\e908";
-}
-.icon-green_polygon:before {
   content: "\e909";
-  color: #00b46f;
 }
 .icon-red_polygon:before {
-  content: "\e90a";
+  content: "\e908";
   color: #f45151;
+}
+.icon-user_icon:before {
+  content: "\e900";
+  color: #fff;
 }

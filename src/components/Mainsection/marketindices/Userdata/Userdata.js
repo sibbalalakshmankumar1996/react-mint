@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './_userdata.scss'
 
 export default function Userdata(props) {
     const { userDetails} = props;

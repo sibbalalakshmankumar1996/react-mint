@@ -1,0 +1,35 @@
+@import "../../../assets/sass/variables.scss";
+@import "../../../assets/sass/mixins";
+
+.mintgenie-containerr{
+    @include mintgenie-main-section;
+}
+.para-details{
+    @include para-text;
+    color:$eerie_black;
+    text-align:left;
+}
+.battle-ground-details{
+    width:45.3rem;
+}
+
+@include breakpoint(mobile){
+    .para-details{
+        font-size:1rem;
+    }
+    .battle-ground-details{
+        width:100%;
+        text-align:left;
+        margin-bottom:1rem;
+    }
+}
+@include breakpoint(tablet){
+    .para-details{
+        font-size:1.2rem;
+    }
+}
+@include breakpoint(laptop){
+    .para-details{
+        font-size:1.4rem;
+    }
+}
