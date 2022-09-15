@@ -33,7 +33,9 @@ export default function Signin() {
 
         <>
             <li>
-                <a href="#0" className="icon-user_icon text-decoration-none bellafter-icon"></a>
+                <a href="#0" className="text-decoration-none">
+                    <i className="icon-user_icon bellafter-icon"></i>
+                </a>
             </li>
             <span className="header-top-text">Hello,</span>
             <button className="header-top-text signin-button" data-bs-toggle="modal" data-bs-target="#myModal">Sign in</button>
